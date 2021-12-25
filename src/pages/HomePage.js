@@ -7,13 +7,13 @@ function HomePage() {
   const [markerData, setMarkerData] = useState([]);
   const [onCloseInfo, setOnCloseInfo] = useState(false);
 
-  const getMarketName = (name) => {
+  const getMarketName = React.useCallback((name) => {
     let markerInfo = dataJson.filter((data) => {
       return data.place === name;
     });
     setOnCloseInfo(false);
     setMarkerData(markerInfo);
-  };
+  },[markerData])
 
   return (
     <div>
