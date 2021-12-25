@@ -1,0 +1,123 @@
+[
+  {
+    "latitude": 1.28692,
+    "longitude": 103.85457,
+    "place": "Merlion",
+    "imgSource": "singapore.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quasi ipsum officia repellat earum magnam rerum, nesciunt, facilis doloribus explicabo! Commodi, facere. Repudiandae placeat sequi inventore aliquid unde error, dolores adipisci nobis beatae repellendus similique reprehenderit doloribus pariatur laboriosam? Incidunt id cumque sunt eos consequuntur sapiente quisquam unde corrupti?",
+    "details": [
+      {
+        "info": "Jl. Raya Suko Desa Cemeng Kalang",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "latitude": 1.287466,
+    "longitude": 103.851424,
+    "place": "Asian Civilisations Museum",
+    "imgSource": "museum.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quasi ipsum officia repellat earum magnam rerum, nesciunt, facilis doloribus explicabo! Commodi, facere. Repudiandae placeat sequi inventore aliquid unde error, dolores adipisci nobis beatae repellendus similique reprehenderit doloribus pariatur laboriosam? Incidunt id cumque sunt eos consequuntur sapiente quisquam unde corrupti?",
+    "details": [
+      {
+        "info": "Jl. Raya Suko Desa Cemeng Kalang",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "latitude": 1.290555,
+    "longitude": 103.846188,
+    "place": "Clarke Quay",
+    "imgSource": "clark.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quasi ipsum officia repellat earum magnam rerum, nesciunt, facilis doloribus explicabo! Commodi, facere. Repudiandae placeat sequi inventore aliquid unde error, dolores adipisci nobis beatae repellendus similique reprehenderit doloribus pariatur laboriosam? Incidunt id cumque sunt eos consequuntur sapiente quisquam unde corrupti?",
+    "details": [
+      {
+        "info": "Jl. Raya Suko Desa Cemeng Kalang",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "latitude": 1.295526,
+    "longitude": 103.845331,
+    "place": "Fort Canning Park",
+    "imgSource": "fort.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quasi ipsum officia repellat earum magnam rerum, nesciunt, facilis doloribus explicabo! Commodi, facere. Repudiandae placeat sequi inventore aliquid unde error, dolores adipisci nobis beatae repellendus similique reprehenderit doloribus pariatur laboriosam? Incidunt id cumque sunt eos consequuntur sapiente quisquam unde corrupti?",
+    "details": [
+      {
+        "info": "Jl. Raya Suko Desa Cemeng Kalang",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "latitude": 1.302279,
+    "longitude": 103.837399,
+    "place": "Orchard Road",
+    "imgSource": "orchard.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quasi ipsum officia repellat earum magnam rerum, nesciunt, facilis doloribus explicabo! Commodi, facere. Repudiandae placeat sequi inventore aliquid unde error, dolores adipisci nobis beatae repellendus similique reprehenderit doloribus pariatur laboriosam? Incidunt id cumque sunt eos consequuntur sapiente quisquam unde corrupti?",
+    "details": [
+      {
+        "info": "Jl. Raya Suko Desa Cemeng Kalang",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "latitude": 1.289332,
+    "longitude": 103.863152,
+    "place": "Singapore Flyer",
+    "imgSource": "flyer.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quasi ipsum officia repellat earum magnam rerum, nesciunt, facilis doloribus explicabo! Commodi, facere. Repudiandae placeat sequi inventore aliquid unde error, dolores adipisci nobis beatae repellendus similique reprehenderit doloribus pariatur laboriosam? Incidunt id cumque sunt eos consequuntur sapiente quisquam unde corrupti?",
+    "details": [
+      {
+        "info": "Jl. Raya Suko Desa Cemeng Kalang",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "latitude": 1.283099,
+    "longitude": 103.860295,
+    "place": "Marina Bay Sands",
+    "imgSource": "marina.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quasi ipsum officia repellat earum magnam rerum, nesciunt, facilis doloribus explicabo! Commodi, facere. Repudiandae placeat sequi inventore aliquid unde error, dolores adipisci nobis beatae repellendus similique reprehenderit doloribus pariatur laboriosam? Incidunt id cumque sunt eos consequuntur sapiente quisquam unde corrupti?",
+    "details": [
+      {
+        "info": "Jl. Raya Suko Desa Cemeng Kalang",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "latitude": 1.28179,
+    "longitude": 103.863954,
+    "place": "Gardens By The Bay",
+    "imgSource": "garden.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quasi ipsum officia repellat earum magnam rerum, nesciunt, facilis doloribus explicabo! Commodi, facere. Repudiandae placeat sequi inventore aliquid unde error, dolores adipisci nobis beatae repellendus similique reprehenderit doloribus pariatur laboriosam? Incidunt id cumque sunt eos consequuntur sapiente quisquam unde corrupti?",
+    "details": [
+      {
+        "info": "Jl. Raya Suko Desa Cemeng Kalang",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "latitude": 1.284193,
+    "longitude": 103.843362,
+    "place": "China Town",
+    "imgSource": "chinatown.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quasi ipsum officia repellat earum magnam rerum, nesciunt, facilis doloribus explicabo! Commodi, facere. Repudiandae placeat sequi inventore aliquid unde error, dolores adipisci nobis beatae repellendus similique reprehenderit doloribus pariatur laboriosam? Incidunt id cumque sunt eos consequuntur sapiente quisquam unde corrupti?",
+    "details": [
+      {
+        "info": "Jl. Raya Suko Desa Cemeng Kalang",
+        "type": "address"
+      },
+      {
+        "info": "http://www.marinabaysands.com/",
+        "type": "link"
+      }
+    ]
+  }
+]

@@ -1,0 +1,345 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+// color pallete
+$active-color: #82be2d;
+$inactive-color: #ffff;
+$primary-dark: #1c1f27;
+$secondary-dark: #282c37;
+$third-dark: #313541;
+$primary-blue: #72cdd2;
+$primary-grey: #8298a0;
+
+// utilities
+.img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-contain {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.box-shadow {
+  box-shadow: 0px 1px 3px rgba($color: black, $alpha: 0.5);
+}
+
+.border-sm {
+    border: 1px solid $primary-dark;
+}
+
+.flip {
+  transform: scaleX(-1);
+}
+
+// sidebar styling
+.sidebar-container {
+  display: flex;
+
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: $third-dark;
+    height: 100vh;
+
+    button {
+      max-width: 7rem;
+      padding: 1rem;
+      background-color: $third-dark;
+      border: none;
+      border-bottom: 1px solid $secondary-dark;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+
+      &.active {
+        background-color: $primary-blue;
+        svg {
+          color: $inactive-color;
+        }
+        span {
+          color: $inactive-color;
+        }
+      }
+
+      svg {
+        color: $primary-grey;
+      }
+
+      span {
+        margin-top: 2px;
+        font-size: 0.8rem;
+        color: $primary-grey;
+      }
+
+      &:hover {
+        background-color: $primary-blue;
+        svg {
+          color: $inactive-color;
+        }
+        span {
+          color: $inactive-color;
+        }
+      }
+    }
+  }
+
+  // menu with dropdown
+  .side-menu {
+    background-color: $secondary-dark;
+    height: 100vh;
+    width: 250px;
+    overflow-y: scroll;
+    transform: translateX(0);
+    transition: all 0.12s ease-in-out;
+    padding: 1rem 0 0 0;
+    // hiding the scrollbar
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &.active {
+        position: absolute;
+        transform: translateX(-150%)
+    }
+    // container of dropdown item
+    .dropdown-container {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 2rem 0.5rem 2rem;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $primary-dark;
+        align-self: center;
+        margin-top: 10px;
+      }
+      // dropdown button
+      .dropdown-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $inactive-color;
+        background-color: $secondary-dark;
+        padding: 0.4rem 0rem 0.4rem 1rem;
+        cursor: pointer;
+
+        &.secondary{
+            color: $primary-grey;
+        }
+
+        p {
+          font-weight: 700;
+          font-size: 0.9rem;
+        }
+        // dropdown item will change their styles when hover
+        &:hover {
+          background-color: $primary-dark;
+          color: $active-color;
+        }
+        // dropdown item will be active when clicked
+        &.active {
+          color: $active-color;
+          background-color: $primary-dark;
+        }
+      }
+      // dropdown content will appear when they have sub title and clicked
+      .dropdown-content {
+        display: none;
+        list-style: none;
+
+        &.active {
+          display: block;
+          margin-top: 10px;
+        }
+
+        li {
+          color: $primary-grey;
+          font-size: 13px;
+          margin-left: 25px;
+          padding: 0.2rem 0 0.2rem 0;
+          cursor: pointer;
+
+          &:hover {
+            color: $inactive-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// info-item styling
+.info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+
+  p,a {
+    font-size: 0.7rem;
+    margin-left: 0.4rem;
+    color: $inactive-color;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  a{
+      cursor: pointer;
+  }
+}
+
+// infobox styling
+.infobox-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 78.64px); //100vh minus height of top bar
+  max-width: 15rem;
+  background-color: $third-dark;
+  box-shadow: 3px 10px 10px rgba($color: black, $alpha: 0.5);
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+
+  &.hidden{
+    transform: translateX(100%);
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+
+    .image-wrapper {
+      width: 100%;
+      margin-bottom: 0;
+      position: relative;
+
+      .close{
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50px;
+          text-align: center;
+          padding: 0.2rem;
+          background-color: rgba($color: red, $alpha: 0.2);
+          color: $inactive-color;
+          font-size: 0.6rem;
+          cursor: pointer;
+
+          &:hover{
+            background-color: rgba($color: red, $alpha: 0.3);
+          }
+      }
+    }
+    .tag {
+      padding: 0.4rem 0.4rem 0.4rem 1.5rem;
+      background-color: $primary-blue;
+      font-weight: 600;
+      & span {
+        color: $inactive-color;
+      }
+    }
+  }
+
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .paragraph {
+      padding: 0.5rem;
+      max-height: 40vh;
+      overflow-y: scroll;
+      margin-bottom: 1rem;
+      color: $inactive-color;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .detail-item {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+    }
+  }
+}
+
+.topnav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.52rem 3rem 1.52rem 3rem;
+  background-color: $inactive-color;
+
+  .nav-title {
+    h5 {
+      font-weight: 600;
+      color: $third-dark;
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+
+    svg {
+      color: $primary-grey;
+      cursor: pointer;
+      margin: 0 0.3rem 0 0.3rem;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.map-container {
+  height: calc(100vh - 78.64px);
+  width: 100%;
+}
+
+.marker-container {
+  cursor: pointer;
+  .tag {
+    position: absolute;
+    width: max-content;
+    top: 0.9rem;
+    left: 0.5rem;
+    padding: 0.3rem 1rem 0.3rem 0.5rem;
+    background-color: $primary-dark;
+    border-radius: 1rem 0 0 1rem;
+    span {
+      color: $inactive-color;
+    }
+
+    &.active {
+      padding: 1rem;
+      top: 0.9rem;
+      left: 1.7rem;
+      background-color: $active-color;
+      border-radius: 1.5rem 0 0 1.5rem;
+    }
+  }
+}
