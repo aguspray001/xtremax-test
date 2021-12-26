@@ -11,7 +11,7 @@ function SideBar() {
   });
   const [openSideMenu, setOpenSideMenu] = useState({ title: "", status: false });
   const [openFilter, setOpenFilter] = useState(false);
-
+  console.log(selectedBarItem.status)
   return (
     <div className="sidebar-container">
       <div className="main-menu">
@@ -49,7 +49,7 @@ function SideBar() {
                 status: !selectedBarItem.status,
               })
             }
-            isActive={selectedBarItem.title === v.title}
+            isActive={selectedBarItem.title === v.title && selectedBarItem.status}
           />
         ))}
       </div>
