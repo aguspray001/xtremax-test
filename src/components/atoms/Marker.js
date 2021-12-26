@@ -12,7 +12,7 @@ function Marker({ isActive, title, address, onClick }) {
         }}
       />
       <div className={`tag ${isActive && "active"}`}>
-        <span>{title}<br/>{isActive && address}</span>
+        <p>{title}<br/>{isActive && address}</p>
       </div>
     </div>
   );

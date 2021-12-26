@@ -1,3 +1,4 @@
+// CSS RESET
 *,
 *::before,
 *::after {
@@ -9,7 +10,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-// color pallete
+
+// COLOR PALLETE
 $active-color: #82be2d;
 $inactive-color: #ffff;
 $primary-dark: #1c1f27;
@@ -18,7 +20,7 @@ $third-dark: #313541;
 $primary-blue: #72cdd2;
 $primary-grey: #8298a0;
 
-// utilities
+// UTILITIES
 .img-cover {
   object-fit: cover;
   width: 100%;
@@ -43,7 +45,9 @@ $primary-grey: #8298a0;
   transform: scaleX(-1);
 }
 
-// sidebar styling
+// COMPONENT STYLING
+
+// SIDEBAR
 .sidebar-container {
   display: flex;
 
@@ -70,7 +74,7 @@ $primary-grey: #8298a0;
         svg {
           color: $inactive-color;
         }
-        span {
+        p {
           color: $inactive-color;
         }
       }
@@ -79,7 +83,7 @@ $primary-grey: #8298a0;
         color: $primary-grey;
       }
 
-      span {
+      p {
         margin-top: 2px;
         font-size: 0.8rem;
         color: $primary-grey;
@@ -90,7 +94,7 @@ $primary-grey: #8298a0;
         svg {
           color: $inactive-color;
         }
-        span {
+        p {
           color: $inactive-color;
         }
       }
@@ -184,7 +188,7 @@ $primary-grey: #8298a0;
   }
 }
 
-// info-item styling
+// INFO DETAIL ITEM
 .info {
   display: flex;
   flex-direction: row;
@@ -204,7 +208,7 @@ $primary-grey: #8298a0;
   }
 }
 
-// infobox styling
+// INFO BOX
 .infobox-container {
   position: absolute;
   top: 0;
@@ -257,7 +261,7 @@ $primary-grey: #8298a0;
       padding: 0.4rem 0.4rem 0.4rem 1.5rem;
       background-color: $primary-blue;
       font-weight: 600;
-      & span {
+      & p {
         color: $inactive-color;
       }
     }
@@ -288,6 +292,7 @@ $primary-grey: #8298a0;
   }
 }
 
+// TOP NAVIGATION
 .topnav {
   width: 100%;
   display: flex;
@@ -320,11 +325,13 @@ $primary-grey: #8298a0;
   }
 }
 
+// MAP CONTAINER
 .map-container {
   height: calc(100vh - 78.64px);
   width: 100%;
 }
 
+// MARKER
 .marker-container {
   cursor: pointer;
   .tag {
@@ -335,7 +342,7 @@ $primary-grey: #8298a0;
     padding: 0.3rem 1rem 0.3rem 0.5rem;
     background-color: $primary-dark;
     border-radius: 1rem 0 0 1rem;
-    span {
+    p {
       color: $inactive-color;
     }
 

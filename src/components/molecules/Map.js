@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+// library
 import GoogleMapReact from "google-map-react";
+// component
 import Marker from "../atoms/Marker";
 
 const Map = ({ data, getMarkerName, selectedMarker }) => {
@@ -41,7 +43,7 @@ const Map = ({ data, getMarkerName, selectedMarker }) => {
               title={d.place}
               lat={d.latitude}
               lng={d.longitude}
-              address={selectedMarker.length > 0 && selectedMarker?.details[0]?.info}
+              address={selectedMarker?.details ? selectedMarker?.details[0]?.info : ""}
             />
           ))}
       </GoogleMapReact>

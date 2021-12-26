@@ -1,17 +1,15 @@
 import React, { useState } from "react";
+// component
 import SideBarItem from "../atoms/SideBarItem";
-
-import { dataFilterSideBar, dataSideBar } from "src/constant";
 import MenuItem from "../atoms/MenuItem";
+// constant data
+import { dataFilterSideBar, dataSideBar } from "src/constant";
 
 function SideBar() {
-  const [selectedBarItem, setSelectedBarItem] = useState({
-    title: "",
-    status: false,
-  });
+  const [selectedBarItem, setSelectedBarItem] = useState({title: "", status: false});
   const [openSideMenu, setOpenSideMenu] = useState({ title: "", status: false });
   const [openFilter, setOpenFilter] = useState(false);
-  console.log(selectedBarItem.status)
+
   return (
     <div className="sidebar-container">
       <div className="main-menu">
@@ -46,7 +44,7 @@ function SideBar() {
             onClick={() =>
               setSelectedBarItem({
                 title: v.title,
-                status: !selectedBarItem.status,
+                status: selectedBarItem.title === v.title ? !selectedBarItem.status : true,
               })
             }
             isActive={selectedBarItem.title === v.title && selectedBarItem.status}

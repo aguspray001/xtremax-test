@@ -7,7 +7,8 @@ function HomePage() {
   const [markerData, setMarkerData] = useState([]);
   const [onCloseInfo, setOnCloseInfo] = useState(false);
 
-  const getMarketName = React.useCallback((name) => {
+  // *FUNCTION: TO GET MARKER DATA AND PASSIING TO LOCAL STATE
+  const getMarkerName = React.useCallback((name) => {
     let markerInfo = dataJson.filter((data) => {
       return data.place === name;
     });
@@ -17,7 +18,7 @@ function HomePage() {
 
   return (
     <div>
-      <Map data={dataJson} getMarkerName={getMarketName} selectedMarker={markerData[0] || []}/>
+      <Map data={dataJson} getMarkerName={getMarkerName} selectedMarker={markerData[0] || []}/>
       <InfoBox
         onShow={onCloseInfo}
         onClose={() => setOnCloseInfo(true)}

@@ -1,4 +1,5 @@
 import React from "react";
+// component
 import InfoItem from "../atoms/InfoItem";
 // assets
 import singapore from "src/assets/img/singapore.jpg";
@@ -65,7 +66,7 @@ function InfoBox({ data, onShow, onClose }) {
           </div>
         </figure>
         <div className="tag">
-          <span>{data?.place}</span>
+          <p>{data?.place}</p>
         </div>
       </div>
       <div className="info-content">
