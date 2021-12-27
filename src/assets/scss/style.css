@@ -281,6 +281,7 @@ body {
 
 .infobox-container .image-container .image-wrapper {
   width: 100%;
+  height: 10rem;
   margin-bottom: -0.2rem;
   position: relative;
 }
