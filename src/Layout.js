@@ -1,6 +1,6 @@
 import SideBar from "./components/molecules/SideBar";
 import Navbar from "./components/molecules/Navbar";
-import "src/assets/scss/style.scss";
+import "src/assets/scss/style.css";
 
 function Layout({children}) {
 

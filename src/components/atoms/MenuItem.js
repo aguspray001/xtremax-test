@@ -23,7 +23,7 @@ function MenuItem({ title, onClick, isActive}) {
     }
   };
   return (
-    <button className={`${isActive && "active"}`} onClick={onClick}>
+    <button className={`${isActive ? "active" : ""}`} onClick={onClick}>
       {iconComponent()}
       <p>{title.toLowerCase()==="suggest"? "Suggest\nAttraction": title}</p>
     </button>

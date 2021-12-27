@@ -3,7 +3,7 @@ import {AiFillCloseCircle, AiFillSetting, AiFillQuestionCircle} from "react-icon
 
 function Navbar() {
     return (
-        <div className='topnav box-shadow'>
+        <nav className='nav-container box-shadow'>
             <div className="nav-title">
                 <h5>TOP-RATED TOURIST ATTRACTIONS IN SINGAPORE</h5>
             </div>
@@ -12,7 +12,7 @@ function Navbar() {
                 <AiFillQuestionCircle style={{width: 30, height: 30}}/>
                 <AiFillCloseCircle style={{width: 30, height: 30}}/>
             </div>
-        </div>
+        </nav>
     )
 }
 
