@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import SideBarItem from "../atoms/SideBarItem";
 import MenuItem from "../atoms/MenuItem";
 // constant data
-import { dataFilterSideBar, dataSideBar } from "src/constant";
+import { dataFilterSideBar, dataSideBar } from "constant";
 
 function SideBar() {
   const [selectedBarItem, setSelectedBarItem] = useState({title: "", status: false});

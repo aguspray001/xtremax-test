@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import InfoBox from "src/components/molecules/InfoBox";
-import Map from "src/components/molecules/Map";
-import dataJson from "src/constant/data.json";
+import InfoBox from "components/molecules/InfoBox";
+import Map from "components/molecules/Map";
+import dataJson from "constant/data.json";
 
 function HomePage() {
   const [markerData, setMarkerData] = useState([]);

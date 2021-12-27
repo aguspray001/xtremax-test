@@ -2,15 +2,15 @@ import React from "react";
 // component
 import InfoItem from "../atoms/InfoItem";
 // assets
-import singapore from "src/assets/img/singapore.jpg";
-import clark from "src/assets/img/clark.jpg";
-import chinatown from "src/assets/img/chinatown.jpg";
-import flyer from "src/assets/img/flyer.jpg";
-import fort from "src/assets/img/fort.jpg";
-import garden from "src/assets/img/garden.jpg";
-import orchard from "src/assets/img/orchard.jpg";
-import marina from "src/assets/img/marina.jpg";
-import museum from "src/assets/img/museum.jpg";
+import singapore from "assets/img/singapore.jpg";
+import clark from "assets/img/clark.jpg";
+import chinatown from "assets/img/chinatown.jpg";
+import flyer from "assets/img/flyer.jpg";
+import fort from "assets/img/fort.jpg";
+import garden from "assets/img/garden.jpg";
+import orchard from "assets/img/orchard.jpg";
+import marina from "assets/img/marina.jpg";
+import museum from "assets/img/museum.jpg";
 
 function InfoBox({ data, onShow, onClose }) {
   const [imageSource, setImageSource] = React.useState(null);
